@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body{
+   height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+}
+
+.meme{
+    padding: .5em;
+}
+
+
+header{
+    display: flex;
+    background-color: rgb(49, 112, 247);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 2em;
+    margin-bottom: .4em;
+}
+.header-slogan{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    letter-spacing: .1em;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+img{
+    width: 100%;
+   display: block;
+}
+
+
+.meme-style{
+    position: relative;
+    display: flex;
+}
+
+.meme-style h2{
+    position: absolute;
+    color: white;
+}
+
+.meme-top{
+    top:0;
+    left: 25%;
+    font-size: 3rem;
+}
+
+
+
+.meme-bottom{
+bottom:0;
+left: 25%;
+font-size: 3rem;
+}
+
+@media(min-width:810px){
+    .meme-top{
+       
+        font-size: 4rem;
+    }
+    
+    
+    
+    .meme-bottom{
+  
+    font-size: 4rem;
+    }
+
+}
+
+input,button{
+    width: 100%;
+    padding: 1em;
+    margin: .2em;
+}
+
+button{
+    color: white;
+    background-color: teal;
+    outline: none;
+    border: 1px solid teal;
+    transition: all .5s;
+}
+
+button:hover{
+    background-color: rgb(5, 110, 110);
+    transition: all .5s;
+}
+
+form{
+    display: flex;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    background-color: black;
+    color: whitesmoke;
+}
+
+@media(max-width:480px){
+    .meme-style img{
+
+    }
+
+    .meme-style{
+       display: flex;
+       justify-content: center;
+    }
+    .form-style{
+        display: flex;
+        flex-flow: column;
+        margin-left: 13%;
+    }
+
+    input,button{
+       width: 75%;
+    }
+
+    button{
+       margin-left: 5%;
+    }
+    .meme-style h2{
+        font-size: 1em;
+    }
+}
